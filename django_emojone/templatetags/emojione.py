@@ -7,4 +7,5 @@ from django.conf import settings
 register = template.Library()
 
 def to_image(val):
+    return str(val) + '/parse emotion/'
     pass
