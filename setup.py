@@ -6,9 +6,9 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-emojione',
-    version='0.1.7',
+    version='0.1.7.0',
     packages=find_packages(),
-    py_modules=['django_emojione'],
+    #py_modules=['django_emojione'],
     include_package_data=True,
     license='BSD License',
     description='Wrapper for emojione to use in django.',
