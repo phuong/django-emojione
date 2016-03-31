@@ -16,7 +16,7 @@ Usage:
 ```
 from django_emojione import to_image
 text = 'I want a luxury :hand_bag: '
-print to_image(text)
+print to_image(text,  style="border:#F00 1px solid", css="a_css_class")
 ```
 
 For more information please check at http://emojione.com/

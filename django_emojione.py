@@ -22,17 +22,17 @@ if hasattr(settings, 'EMOJIPY_IMAGE_PATH'):
         Emoji.image_svg_path = settings.EMOJIPY_IMAGE_PATH
 
 
-def to_image(text):
-    return Emoji.to_image(text)
+def to_image(text, **kwargs):
+    return Emoji.to_image(text, **kwargs)
 
 
-def unicode_to_image(text):
-    return Emoji.unicode_to_image(text)
+def unicode_to_image(text, **kwargs):
+    return Emoji.unicode_to_image(text, **kwargs)
 
 
-def ascii_to_unicode(text):
-    return Emoji.ascii_to_unicode(text)
+def ascii_to_unicode(text, **kwargs):
+    return Emoji.ascii_to_unicode(text, **kwargs)
 
 
-def ascii_to_image(text):
-    return Emoji.ascii_to_image(text)
+def ascii_to_image(text, **kwargs):
+    return Emoji.ascii_to_image(text, **kwargs)
