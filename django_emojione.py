@@ -5,20 +5,20 @@ from django.conf import settings
 from emojipy import Emoji
 
 image_type = 'png'
-if settings.is_defined('EMOJIPY_IMAGE_TYPE'):
+if hasattr(settings, 'EMOJIPY_IMAGE_TYPE'):
     image_type = settings.EMOJIPY_IMAGE_TYPE
 
-if settings.is_defined('EMOJIPY_SPRITES'):
+if hasattr(settings, 'EMOJIPY_SPRITES'):
     Emoji.sprites = settings.EMOJIPY_SPRITES
 
-if settings.is_defined('EMOJIPY_SPRITES_PATH'):
+if hasattr(settings, 'EMOJIPY_SPRITES_PATH'):
     Emoji.image_path_svg_sprites = settings.EMOJIPY_SPRITES_PATH
 
-if settings.is_defined('EMOJIPY_IMAGE_TYPE'):
+if hasattr(settings, 'EMOJIPY_IMAGE_TYPE'):
     Emoji.sprites = settings.EMOJIPY_SPRITES
 
 Emoji.image_type = image_type
-if settings.is_defined('EMOJIPY_IMAGE_PATH'):
+if hasattr(settings, 'EMOJIPY_IMAGE_PATH'):
     if image_type is 'png':
         Emoji.image_png_path = settings.EMOJIPY_IMAGE_PATH
     elif image_type is 'svg':
