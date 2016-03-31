@@ -29,6 +29,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        "emojipy>=0.1",
+        "emojipy>=0.1.1",
     ],
 )
