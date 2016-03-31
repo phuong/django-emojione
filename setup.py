@@ -1,20 +1,17 @@
 import os
 from setuptools import find_packages, setup
 
-with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
-    README = readme.read()
-
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-emojione',
-    version='0.1',
+    version='0.1.2',
     packages=find_packages(),
+    py_modules=['django_emojione'],
     include_package_data=True,
     license='BSD License',
     description='Wrapper for emojione to use in django.',
-    long_description=README,
     url='https://github.com/phuong/django-emojione',
     download_url='https://github.com/phuong/django-emojione/archive/master.zip',
     author='Phuong',
