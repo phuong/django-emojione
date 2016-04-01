@@ -12,11 +12,28 @@ EMOJIPY_IMAGE_TYPE = 'png' # Or svg
 EMOJIPY_IMAGE_PATH = 'path/to/emotion/graphics'
 ```
 
-Usage:
+## Usage:
+Simle usage
 ```
 from django_emojione import to_image
-text = 'I want a luxury :hand_bag: '
+text = 'I want a luxury :hand_bag: \U1f602'
 print to_image(text,  style="border:#F00 1px solid", css="a_css_class")
+```
+
+Use in template
+```
+# In settings, add django_emojione
+INSTALLED_APPS = (
+    #...
+    'django_emojione',
+    #...
+)
+
+# In template file, register emojione
+{% load emojione %}
+
+{% to_image text  style="border:#F00 1px solid", css="a_css_class" %}
+{% unicode_to_image text  style="border:#F00 1px solid", css="a_css_class" %}
 ```
 
 For more information please check at http://emojione.com/
