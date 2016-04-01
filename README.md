@@ -1,5 +1,5 @@
 # django-emojione
-Wrapper for emojione to use in django
+Wrapper for emojione emotion to use in django
 
 ```
 pip install django-emojione
