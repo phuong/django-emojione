@@ -8,7 +8,6 @@ setup(
     name='django-emojione',
     version='0.1.7.2',
     packages=find_packages(),
-    #py_modules=['django_emojione'],
     include_package_data=True,
     license='BSD License',
     description='Wrapper for emojione to use in django.',
@@ -29,6 +28,6 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
     install_requires=[
-        "emojipy>=0.1.1",
+        "emojipy>=0.1.2",
     ],
 )
